@@ -1,8 +1,13 @@
-// create a web server
-// create a route for /comments
-// create a route for /comments/new
-// create a route for /comments/:id
-// create a route for /comments/:id/edit
-// create a route for /comments/:id/delete
-// create a route for /comments/:id/like
-// create a route for /comments/:id/dislike
+// create web server
+// create a web server that listens on port 8080
+// and serves the files in the "public" directory
+
+const express = require('express');
+const app = express();
+const port = 8080;
+
+app.use(express.static('public'));
+
+app.listen(port, () => {
+  console.log(`Server listening at http://localhost:${port}`);
+});
