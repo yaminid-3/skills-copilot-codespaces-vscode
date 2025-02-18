@@ -1,4 +1,4 @@
-// create web server
+// Create web server
 // create a web server that listens on port 8080
 // and serves the files in the "public" directory
 
